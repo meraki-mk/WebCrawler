@@ -1,0 +1,94 @@
+<div style="padding: 50px; background-image: linear-gradient(rgb(156, 245, 230), rgb(201, 219, 233));">
+    <div style="padding: 30px; text-align: center;">
+        <h1>WEBCRAWLER SCAN DETAILED REPORT</h1>
+    </div>
+
+    <br><br>
+    <h1>SSL Certificate Compliance</h1>
+    <br>
+    <div style="color: red; font-weight: 600; font-size: larger;">
+        <h3>NOTE:</h3>
+        <ol type="1">
+            <li><i class="fa fa-circle" style="font-size:10px"></i>&nbsp;&nbsp;SSL certification is required</li>
+        </ol>
+    </div>
+    <br><br>
+    <p style="font-weight: bolder; font-size: large; color: black; ">
+        {% autoescape false %}
+        {{s1a}}
+        {% endautoescape %}
+    </p>
+    <br><br>
+    <h4>SSL CERTIFICATION DETAILS</h4> <br>
+    <p style="font-weight: bolder; font-size: large; color: black;">
+        {% autoescape false %}
+        {{s1b}}
+        {% endautoescape %}
+    </p>
+    <br><br>
+    <p style="font-weight: bolder; font-size: large; color: black;">
+        {% autoescape false %}
+        {{s1c}}
+        {% endautoescape %}
+    </p>
+    <br>
+    <br>
+
+
+    <br><br>
+    <h1>Cookie Checker</h1>
+    <br>
+    <br><br>
+    <div style="color: red; font-weight: 600; font-size: larger;">
+        <h3>NOTE:</h3>
+        <ol type="1">
+            <li><i class="fa fa-circle" style="font-size:10px"></i>&nbsp;&nbsp;HTTPonly flag should be set to TRUE , so
+                cookies can be only accessed via HTTP/HTTPS protocol</li>
+            <li><i class="fa fa-circle" style="font-size:10px"></i>&nbsp;&nbsp;Cookies should not disclouse username ,
+                password or any Personally identifiable information (PII)</li>
+            <li><i class="fa fa-circle" style="font-size:10px"></i>&nbsp;&nbsp;Website must take the permission
+                (consent) from user before storing cookies</li>
+        </ol>
+    </div>
+    <br><br>
+    <p style="font-weight: bolder; font-size: large; color: black; ">
+        {% autoescape false %}
+        {{s2a}}
+        {% endautoescape %}
+    </p>
+    <br><br>
+
+
+    <br><br>
+    <h1>ADA Compliance</h1>
+    <br>
+    <br><br>
+    <div style="color: red; font-weight: 600; font-size: larger;">
+        <h3>NOTE:</h3>
+        <ol type="1">
+            <li><i class="fa fa-circle" style="font-size:10px"></i>&nbsp;&nbsp;Every image must contain an alt text</li>
+            <li><i class="fa fa-circle" style="font-size:10px"></i>&nbsp;&nbsp;Tab index should be greater then 1</li>
+            <li><i class="fa fa-circle" style="font-size:10px"></i>&nbsp;&nbsp;Color contras ratio for each element must
+                be greater than 4.5:1</li>
+        </ol>
+    </div>
+    <br><br>
+    <p style="font-weight: bolder; font-size: large; color: black;">
+        {% autoescape false %}
+        {{s3a}}
+        {% endautoescape %}
+    </p>
+    <br>
+    <p style="font-weight: bolder; font-size: large; color: black;">
+        {% autoescape false %}
+        {{s3b}}
+        {% endautoescape %}
+    </p>
+    <br>
+    <p style="font-weight: bolder; font-size: large; color: black;">
+        {% autoescape false %}
+        {{s3c}}
+        {% endautoescape %}
+    </p>
+    <br><br>
+</div>
